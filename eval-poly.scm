@@ -15,7 +15,7 @@
   (cond
     ((null? coefficients) 0)
     ((null? (cdr coefficients)) (car coefficients))
-    (else (+ (car coefficients) ((eval-polynomial (map (lambda (n) (* n x)) (cdr coefficients)) x)))) 
+    (else (+ (car coefficients) (eval-polynomial (map (lambda (n) (* n x)) (cdr coefficients)) x))) 
   )
 )
 
