@@ -7,7 +7,7 @@
 
 (define (my-reverse lst)
   ; This is one short line
-  (foldr cons '() lst)
+  (fold-right cons '() lst)
 )
 
 ;; Test cases
