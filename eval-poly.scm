@@ -14,7 +14,7 @@
 (define (eval-polynomial coefficients x)
   (cond
     ((null? coefficients) 0)
-    (else (+ (* (car coefficients) x) ((eval-polynomial (map * (cdr coefficients) x) x)))) 
+    (else (+ (* (car coefficients) x) ((eval-polynomial (map * (cdr coefficients) (list x)) x)))) 
   )
 )
 
