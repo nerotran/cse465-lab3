@@ -7,6 +7,7 @@
 
 (define (cube-all lst) 
   ;; This should only be one line!
+  (map * lst (map * lst lst))
 )
 
 ;; Test cases
