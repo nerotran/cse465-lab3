@@ -5,11 +5,7 @@
 
 (define (even-values lst)
   ; This is one short line
-  (cond
-    ((null? lst) '())
-    ((= (modulo (car lst) 2) 0) (cons (car lst) (even-values (cdr lst))))
-    (else (even-values (cdr lst))) 
-  )
+  (filter even? lst)
 )
 
 ;; Test cases
